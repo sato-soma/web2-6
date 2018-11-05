@@ -31,7 +31,7 @@ footer{
 }
 
 /* 641px以下 */
-@media screen and (min-widht:641px){
+@media screen and (min-width:641px){
 aside{
 width: calc(50% - 20px);
   float:left;
@@ -44,7 +44,7 @@ width: calc(50% - 20px);
 }
 
 /* 1025px以上 */
-@media screen and (min-widht:1025px){
+@media screen and (min-width:1025px){
 #main{
 max-width: 1024px;
   margin: auto;
@@ -67,21 +67,21 @@ max-width: 1024px;
 }
 
 /* 640px以下 */
-@media screen and (max-widht:640px){
+@media screen and (max-width:640px){
 body{
 background-color: red;
 }
 }
 
 /*640px以下 980px以下 */
-@media screen and (min-widht:641px) and (max-widht:980px){
+@media screen and (min-width:641px) and (max-widht:980px){
 body{
 background-color: green;
 }
 }
 
 /* 981px以下 */
-@media screen and (min-widht:980px){
+@media screen and (min-width:980px){
 body{
 background-color: blue;
 }
