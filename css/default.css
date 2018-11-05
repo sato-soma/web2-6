@@ -74,26 +74,26 @@ background-color: red;
 }
 
 /*640px以下 980px以下 */
-@media screen and (min-width:641px) and (max-widht:980px){
+@media screen and (min-width:641px) and (max-width:980px){
 body{
 background-color: green;
 }
 }
 
-/* 981px以下 */
-@media screen and (min-width:980px){
+/* 981px以上 */
+@media screen and (min-width:981px){
 body{
 background-color: blue;
 }
 }
 
-@media screen and (orientation:portrai){
+@media screen and (orientation:portrait){
 body:after{
 content: "縦長";
 }
 }
 
-@media screen and (orientation:andscape){
+@media screen and (orientation:landscape){
 body:after{
 content: "横長";
 }
