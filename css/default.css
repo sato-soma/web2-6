@@ -6,10 +6,70 @@ margin: 0;
 padding: 0;
 }
 
+body{
+  background-color: gray;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+header{
+ padding: 10px;
+  text-align: center;
+  background-color: red;
+}
+section{
+ padding: 10px;
+  background-color: orange;
+}
+aside{
+ padding: 10px;
+  background-color: green;
+}
+footer{
+ padding: 10px;
+  background-color: blue;
+  text-align: center;
+}
+
+/* 641px以下 */
+@media screen and (min-widht:641px){
+aside{
+width: calc(50% - 20px);
+  float:left;
+}
+  #side:after{
+    content:"";
+    display:block;
+    clear:both;
+  }
+}
+
+/* 1025px以上 */
+@media screen and (min-widht:1025px){
+#main{
+max-width: 1024px;
+  margin: auto;
+}
+  section{
+   width: calc(70% - 20px);
+    float:left;
+  }
+  #side{
+    width: calc(1024px - 718px);
+    float:left;
+  }
+  aside{
+    width: calc(100% - 20px);
+  }
+  #main:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+
 /* 640px以下 */
 @media screen and (max-widht:640px){
 body{
-background-color:red;
+background-color: red;
 }
 }
 
@@ -23,6 +83,18 @@ background-color: green;
 /* 981px以下 */
 @media screen and (min-widht:980px){
 body{
-background-color:blue;
+background-color: blue;
+}
+}
+
+@media screen and (orientation:portrai){
+body:after{
+content: "縦長";
+}
+}
+
+@media screen and (orientation:andscape){
+body:after{
+content: "横長";
 }
 }
