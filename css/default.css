@@ -74,7 +74,7 @@ background-color: red;
 }
 
 /*640px以下 980px以下 */
-@media screen and (min-widht:640px) and (max-widht:980px){
+@media screen and (min-widht:641px) and (max-widht:980px){
 body{
 background-color: green;
 }
